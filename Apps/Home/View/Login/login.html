@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>前台登录页面</title>
+        <load href='__PUBLIC__/Css/Home/bootstrap/css/bootstrap.min.css' />
+        <load href='__PUBLIC__/Css/Home/base.css' />
+        <load href='__PUBLIC__/Css/Home/Flogin.css' />
+        <load href='__PUBLIC__/Js/Home/jQuery.js' />
+        <load href='__PUBLIC__/Js/Home/login_bg.js' />
+    </head>
+    <body>
+        
+        <div class='login_bg'>
+            <ul>        
+                <li><img src='__PUBLIC__/Images/login_bg/bg06.jpg' /></li>
+                <li><img src='__PUBLIC__/Images/login_bg/bg02.jpg' /></li>
+                <li><img src='__PUBLIC__/Images/login_bg/bg08.jpg' /></li> 
+                <li><img src='__PUBLIC__/Images/login_bg/bg04.jpg' /></li>     
+            </ul>
+        </div>
+
+        <div class='login_box'>
+            <h1>用户登录</h1>
+            <form action='__URL__/doLogin' method='post' name='myForm'>
+                <div class='username'>
+                    <lable>用户名：</lable>
+                    <input type='text' name='username' />
+                    <span>请填写用户名!</span>
+                </div>
+                <div class='password'>
+                    <lable>密　码：</lable>
+                    <input type='password' name='password' />
+                    <span>请填写密码!</span>
+                </div>
+                <p id='test'><{$Think.session.error}></p>
+                <p class='error'>用户名或密码输入错误!</p>
+                <button type='submit' class='btnSub btn btn-primary'>立即登录</button>
+                <p class='register'><a href=''>什么您还没有账号？点我点我！注册</a></p>
+            </form>
+        </div>
+        
+        <div class='login_img' id='moveImg'>
+                <img src='__PUBLIC__/Images/login_bg/monkey03.png' /> 
+        </div>
+
+        <div class='go'>
+                <img src='__PUBLIC__/Images/login_bg/go2.png' />
+        </div>     
+    </body>
+</html>

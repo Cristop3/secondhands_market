@@ -1,0 +1,11 @@
+/**
+ *  这里是内部框架初始界面布局
+ * 
+ */
+
+.box{
+    width:1110px;
+    height:560px;
+    background:url(../../../Public/Images/admin_index/111.jpg) 100% 100% no-repeat;
+}
+

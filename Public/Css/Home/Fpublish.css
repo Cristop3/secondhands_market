@@ -1,0 +1,149 @@
+/**
+ *
+ *            2016/4/6 这里是发布信息页面的布局 Fpublish.css
+ * 
+ */
+
+
+/*0.头部headerOne布局*/
+    /*头部用户头像设置*/
+
+.navbar_nav img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.menuDown{
+    width:100px;
+    border:1px solid rgb(197,195,190);
+    position:absolute;
+    top:40px;
+    left:90px;
+    display: none;
+    z-index:9999;
+    background-color:#fff;
+}
+.menuDown li{
+    //width:100%;
+    height:30px;
+    margin:1px;
+    //background-color:gray;
+    line-height:30px;
+    text-align:center;
+}
+.menuDown li a{
+    width:100%;
+    //background-color:gray;
+    display:block;
+    color:#7f757e;
+}
+.menuDown li a:hover{
+    background-color:rgb(238,174,50);
+    text-decoration: none;
+}
+
+/*1.发布页面的主体布局*/
+.container{
+    margin:20px auto;
+    width:1000px;
+    text-align: center;
+    //border:1px solid blue;
+    position:relative;
+    box-shadow: 3px 3px 2px green;
+}
+.publishForm{
+    width:100%;
+    margin-top:10px;
+    text-align:center;
+}
+#myTable{
+    width:600px;
+    //font-family: 楷体;
+}
+#myTable td{
+    //border:1px solid gray;
+    height:110px;
+    position: relative;
+}
+.starRed{
+    color:red;
+    font-size:20px;
+}
+#myTable input{
+    //font-family: 楷体;
+    font-size:16px;
+    border:1px solid gray;
+}
+#myTable .active{
+    border:2px solid #00d1c1;
+}
+#myTable .active2{
+    border:2px solid red;
+}
+#myTable input[name='title']{
+    height:40px;
+    width:400px;
+}
+#myTable select[name='type'],#myTable select[name='degree']{
+    width:205px;
+    height:40px;
+    text-align: center;
+    font-size:16px;
+    font-weight: bold;
+}
+#myTable input[name='nowPrice'],#myTable input[name='costPrice']
+,#myTable input[name='address'],#myTable input[name='connPhone']{
+    height:40px;
+    width:200px;
+}
+#myTable textarea{
+  width:300px;
+  height:100px;  
+}
+
+/*2.提示错误未填信息*/
+
+#myTable strong,#myTable i{
+    color:red;
+}
+#myTable span{
+    display:none;
+}
+.godsPicSpan{
+    position:absolute;
+    top:42px;
+    left:200px;
+}
+
+
+/*3.侧面显示提示信息*/
+.titleMess{
+    width:300px;
+    height:90px;
+    //background-color: gray;
+    position:absolute;
+    top:220px;
+    right:50px;
+}
+.priceMess{
+    width:310px;
+    height:85px;
+    position:absolute;
+    right:50px;
+    top:430px;
+    //background-color: gray;
+}
+
+/*4.图片预览布局*/
+#imgdiv1,#imgdiv2,#imgdiv3,#imgdiv4{
+    position: absolute;
+    right:10px;
+    top:5px;
+}
+#imgdiv1 img,#imgdiv2 img,#imgdiv3 img,#imgdiv4 img{
+    border-radius: 5px;
+}
+
+
+

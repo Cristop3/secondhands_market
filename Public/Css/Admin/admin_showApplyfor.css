@@ -1,0 +1,21 @@
+/**
+ *
+ *         2016/4/11 这里是管理员查看用户申请的货品详细信息
+ * 
+ */
+
+.box{
+    width:1000px;
+    //height:500px;
+    //border:1px solid blue;
+    margin:20px auto;
+}
+table td{
+    text-align: center;
+}
+table td:nth-child(odd){
+    width:15%;
+    text-align: center;
+    font-size:16px;
+    font-weight: bold;
+}

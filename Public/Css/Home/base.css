@@ -1,0 +1,22 @@
+/**
+ *      所有页面的css预定义处理 base.css
+ * 
+ */
+
+html,body,ul,h1,h2,h3,p,dl,li{
+    margin:0;
+    padding:0;
+}
+
+li{
+    list-style:none;
+}
+
+img{
+    border:none;
+}
+
+a{
+    font-size:14px;
+    text-decoration:none;
+}

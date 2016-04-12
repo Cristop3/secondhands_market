@@ -1,0 +1,75 @@
+/**
+ *
+ *          前台主页布局设置未登录时 Findex.css
+ * 
+ */
+
+/*主页头部布局*/
+.headerOne{
+    width:1349px;
+    height:56px;
+    background-color:rgb(240,240,240);
+    //border:1px solid gray;
+}
+.toolbar{
+    width:1200px;
+    height:56px;
+    margin:0 auto;
+    padding:0 4px;
+    line-height:56px;
+    //background-color:blue;
+}
+.toolbar_left{
+    width:75%;
+    float:left;
+    margin-right:-75%;
+    //background:gray;
+}
+.toolbar_right{
+    //background-color:gray;
+    float:right;
+    position:relative;
+    margin:0;  
+}
+/*左部手机小图片*/
+.mobile{
+    display:inline-block;
+    width:28px;
+    height:28px;
+}
+.mobile img{
+    width:100%;
+    height:100%;
+}
+.toolbar_left a{
+    color:rgb(119,119,114);
+    font-size:14px;
+    padding:0 5px;
+}
+.toolbar_left a:hover{
+    color:rgb(249,64,102);
+}
+.toolbar_left .sep{
+    color:silver;
+    margin-left:0.5em;
+    margin-right:0.5em;
+}
+/*右方五个链接布局*/
+.navbar_nav{
+    line-height:56px;
+    float:right;
+    margin:0;
+}
+.navbar_nav li{
+    display:inline;
+    height:20px;
+    border-right:1px solid silver;
+    padding:2px 20px;
+}
+.navbar_nav li a{
+    color:rgb(119,119,114);
+}
+.navbar_nav li a:hover{
+    font-size:14px;
+    text-decoration:none;
+}

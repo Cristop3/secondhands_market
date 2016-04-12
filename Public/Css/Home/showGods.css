@@ -1,0 +1,193 @@
+/**
+ *
+ *      这里是展示二手商品的详细信息页面布局 showGods.css 2016/4/5
+ *
+ * 
+ */
+
+/*1.头部headerOne布局*/
+    /*头部用户头像设置*/
+.navbar_nav img{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+}
+
+.menuDown{
+    width:100px;
+    border:1px solid rgb(197,195,190);
+    position:absolute;
+    top:40px;
+    left:90px;
+    display: none;
+    z-index:9999;
+    background-color:#fff;
+}
+.menuDown li{
+    //width:100%;
+    height:30px;
+    margin:1px;
+    //background-color:gray;
+    line-height:30px;
+    text-align:center;
+}
+.menuDown li a{
+    width:100%;
+    //background-color:gray;
+    display:block;
+    color:#7f757e;
+}
+.menuDown li a:hover{
+    background-color:rgb(238,174,50);
+    text-decoration: none;
+}
+
+/*2.头部headerTwo布局*/
+.headerTwo{
+    width:1349px;
+    height:100px;
+    background-color:rgb(240,240,240);
+    margin-top:10px;
+}
+.location{
+    width:1200px;
+    height:100px;
+    margin:0 auto;
+    position:relative;
+    //background-color:blue;
+}
+.logoImg{
+    width:300px;
+    //background-color: blue;
+}
+.logoTips{
+    text-align:center;
+    display: block;
+    width:100%;;
+    font-size:16px;
+    font-weight: bold;
+    //background-color:blue;
+    color:rgb(249,64,102);
+}
+.publish{
+    width:180px;
+    height:100px;
+    position:absolute;
+    right:0;
+    top:0;
+    //background:gray;
+    padding:10px;
+}
+.btnPublish{
+    width:100%;
+    height:40px;
+    display: inline-block;
+    background-color:rgba(249,64,102,0.6);
+    line-height: 40px;
+    text-align: center;
+    font-size:18px;
+    color:#fff;
+    cursor: pointer;
+}
+.btnPublish:hover{
+    background-color:rgba(249,64,102,1);
+    text-decoration: none;
+    color:#fff;
+}
+/*二手商品详细页面内容主题container*/
+.container{
+    width:1200px;
+    border:1px solid blue;
+    background-color: rgb(240,240,240);
+    padding:2px;
+    margin-top:30px;
+}
+.container .showLeft{
+    width:880px;
+    border:1px solid gray;
+    //background:red;
+    float:left;
+    padding:10px 5px 10px 10px;
+    overflow:hidden;
+}
+.container .showRight{
+    width:300px;
+    background:gray;
+    border:1px solid gray;
+    float:right;
+}
+.showLeft .span{
+    margin-top:10px;
+}
+.showLeft .hr{
+    margin-top:10px;
+    width:100%;
+    height:2px;
+    background-color:red;
+    margin-bottom: 20px;
+}
+.showLeft .showImg{
+    width:500px;
+    height:400px;
+    border:1px solid yellow;
+    float:left;
+}
+.showLeft .showDetails{
+    width:350px;
+    height:400px;
+    border:1px solid blue;
+    float:right;
+    padding:10px;
+}
+.sdTable{
+    width:100%;
+    height:100%;
+}
+.sdTable td{
+    height:50px;
+    font-size:18px;
+    border:1px solid gray;
+}
+.sdUl{
+    width:500px;
+    height:100px;
+    border:1px solid blue;
+    padding:10px;
+    text-align:center;
+}
+.sdUl li{
+    float:left;
+    width:80px;
+    height:80px;
+    margin:0px 19px;
+    background-color: gray; 
+}
+.showLeft h4{
+    font-weight: bold;
+}
+.content{
+    margin-top:10px;
+    font-size: 16px;
+}
+.sdBigImg{
+    width:100%;
+    height:400px;
+    background-color:gray;
+}
+
+/*右边布局*/
+.personInfo{
+    height:200px;
+    text-align:center;
+    border:1px solid gray;
+}
+.personInfo div{
+    width:80px;
+    height:80px;
+    margin:0 auto;
+    border-radius: 50%;
+    border:1px solid blue;
+}
+.personInfo p{
+    margin:10px;
+}

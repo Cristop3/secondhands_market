@@ -1,0 +1,51 @@
+<?php if (!defined('THINK_PATH')) exit();?>                    <!-- 
+                    2016/4/6 这里是后台主页面
+                            1.目前暂定分框架iframe涉及4个模块
+                            1.1 用户管理（①查看所有的用户 ②删除注册的用户）
+                            1.2 请求管理（①管理用户发布信息是否通过并显示在前台界面中）
+                            1.3 商品管理（①增加商品 ②删除商品 ③查询商品 ④修改商品）
+                            1.4 通告管理（①修改前台页面中的通告信息）
+                       -->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>后台主页面</title>
+        <link rel="stylesheet" type="text/css" href="/SecondHands_Market/Public/Css/Home/bootstrap/css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="/SecondHands_Market/Public/Css/Home/base.css" />
+        <link rel="stylesheet" type="text/css" href="/SecondHands_Market/Public/Css/Admin/admin_index.css" />
+        <script type='text/javascript' src='/SecondHands_Market/Public/Js/Admin/jQuery.js'></script>
+        <script type='text/javascript' src='/SecondHands_Market/Public/Js/Admin/admin_index.js'></script>
+
+    </head>
+    <body>
+        <header>
+            <div class='ad_header'>
+                <h2>CUIT校园二手市场后台管理</h2>
+                <span>欢迎回来!!! &nbsp; &nbsp; <i class='glyphicon glyphicon-user'></i>&nbsp; &nbsp;<u><?php echo (session('managername')); ?></u></span>
+                <button class='btn btn-primary'>注销</button>
+            </div>
+        </header>
+        <div class='adLogo'>
+            <img src='/SecondHands_Market/Public/Images/admin_index/ad_logoImg.png' />
+        </div>
+        <div class='nav_left'>
+            <div class='box'>
+                <h2><i class='glyphicon glyphicon-user'></i>用户管理</h2>
+                <p id='user'>查看所有用户</p>
+                <h2><i class='glyphicon glyphicon-list-alt '></i>请求管理</h2>
+                <p id='applyfor'>查看发布请求</p>
+                <h2><i class='glyphicon glyphicon-gift '></i>商品管理</h2>
+                <ul class='p_ul'>
+                    <li><p id='addGods'>增加商品</p></li>
+                    <li><p id='searchGods'>查询商品</p></li>
+                </ul>
+                <h2><i class='glyphicon glyphicon-file '></i>通告管理</h2>
+                <p id='commess'>修改通告</p>
+            </div>
+        </div>
+        <div class='iframe_right'>
+           <iframe src=""  frameboder="0" scrolling:"auto" id='myIframe'></iframe>
+        </div>
+    </body>
+</html>

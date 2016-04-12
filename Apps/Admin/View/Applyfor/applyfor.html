@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <load href='__PUBLIC__/Css/Home/base.css' />
+        <load href='__PUBLIC__/Css/Home/bootstrap/css/bootstrap.min.css' />
+        <load href='__PUBLIC__/Css/Admin/admin_applyfor.css' />
+        <script type='text/javascript' src='__PUBLIC__/Js/Admin/jQuery.js'></script>
+        <script type='text/javascript' src='__PUBLIC__/Js/Admin/admin_applyfor.js'></script>
+    </head>
+    <body>
+        <div class='box'>
+            <div class='title'>
+                申请处理
+            </div>
+            <div class='tab'>
+                <span class='spanDigitals'>电子产品申请<{$number}></span>
+                <span class='spanBooks'>图书申请</span>
+                <span class='spanSports'>运动装备申请</span>
+                <span class='spanArguments'>乐器申请</span>
+                <span class='spanGroceries'>杂货铺申请</span>
+            </div>
+            <div class='content'>
+                
+                <div class='digitals'>
+                    <table class='table table-bordered table-striped myTable' >
+                        <tr>
+                            <th>编号</th>
+                            <th>产品标题</th>
+                            <th>发布者头像</th>
+                            <th style='display:none'>产品类型</th>
+                            <th>发布者名称</th>
+                            <th>处理状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name='res' item='vo'>
+                            <tr>
+                                <td><{$vo.id}></td>
+                                <td><{$vo.title}></td>
+                                <td><img src="__PUBLIC__/Uploads/<{$vo.headPic}>"></td>
+                                <td style='display:none'><{$vo.type}></td>
+                                <td><{$vo.username}></td>
+                                <td><{$vo.state}></td>
+                                <td><button class='btn btn-primary btn-sm'>查看</button></td>
+                            </tr>
+                        </foreach>
+                    </table>
+                </div>
+                <div class='books'>
+                    <table class='table table-bordered table-striped myTable' >
+                        <tr>
+                            <th>编号</th>
+                            <th>产品标题</th>
+                            <th>发布者头像</th>
+                            <th style='display:none'>产品类型</th>
+                            <th>发布者名称</th>
+                            <th>处理状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name='res2' item='vo'>
+                            <tr>
+                                <td><{$vo.id}></td>
+                                <td><{$vo.title}></td>
+                                <td><img src="__PUBLIC__/Uploads/<{$vo.headPic}>"></td>
+                                <td style='display:none'><{$vo.type}></td>
+                                <td><{$vo.username}></td>
+                                <td><{$vo.state}></td>
+                                <td><button class='btn btn-primary btn-sm'>查看</button></td>
+                            </tr>
+                        </foreach>
+                    </table>
+                </div>
+                <div class='sports'>
+                    <table class='table table-bordered table-striped myTable' >
+                        <tr>
+                            <th>编号</th>
+                            <th>产品标题</th>
+                            <th>发布者头像</th>
+                            <th style='display:none'>产品类型</th>
+                            <th>发布者名称</th>
+                            <th>处理状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name='res3' item='vo'>
+                            <tr>
+                                <td><{$vo.id}></td>
+                                <td><{$vo.title}></td>
+                                <td><img src="__PUBLIC__/Uploads/<{$vo.headPic}>"></td>
+                                <td style='display:none'><{$vo.type}></td>
+                                <td><{$vo.username}></td>
+                                <td><{$vo.state}></td>
+                                <td><button class='btn btn-primary btn-sm'>查看</button></td>
+                            </tr>
+                        </foreach>
+                    </table>
+                </div>
+                <div class='arguments'>
+                    <table class='table table-bordered table-striped myTable' >
+                        <tr>
+                            <th>编号</th>
+                            <th>产品标题</th>
+                            <th>发布者头像</th>
+                            <th style='display:none'>产品类型</th>
+                            <th>发布者名称</th>
+                            <th>处理状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name='res4' item='vo'>
+                            <tr>
+                                <td><{$vo.id}></td>
+                                <td><{$vo.title}></td>
+                                <td><img src="__PUBLIC__/Uploads/<{$vo.headPic}>"></td>
+                                <td style='display:none'><{$vo.type}></td>
+                                <td><{$vo.username}></td>
+                                <td><{$vo.state}></td>
+                                <td><button class='btn btn-primary btn-sm'>查看</button></td>
+                            </tr>
+                        </foreach>
+                    </table>
+                </div>
+                <div class='groceries'>
+                    <table class='table table-bordered table-striped myTable' >
+                        <tr>
+                            <th>编号</th>
+                            <th>产品标题</th>
+                            <th>发布者头像</th>
+                            <th style='display:none'>产品类型</th>
+                            <th>发布者名称</th>
+                            <th>处理状态</th>
+                            <th>操作</th>
+                        </tr>
+                        <foreach name='res5' item='vo'>
+                            <tr>
+                                <td><{$vo.id}></td>
+                                <td><{$vo.title}></td>
+                                <td><img src="__PUBLIC__/Uploads/<{$vo.headPic}>"></td>
+                                <td><{$vo.type}></td>
+                                <td><{$vo.username}></td>
+                                <td><{$vo.state}></td>
+                                <td><button class='btn btn-primary btn-sm'>查看</button></td>
+                            </tr>
+                        </foreach>
+                    </table>
+                </div>
+                
+            </div>
+        </div>
+    </body>
+</html>
